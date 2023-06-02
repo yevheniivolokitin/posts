@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./index.css" />
+      <title>Post</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="visual">
+            <h1 class="nwpost">New post</h1>
+            <input
+               class="js-title-input title-input"
+               placeholder="Заголовок"
+               type="text"
+            />
+            <textarea
+               class="js-text-input text-input"
+               placeholder="Текст"
+               type="text"
+            ></textarea>
+            <button class="js-button-post button-post">Опубликовать</button>
+            <div id="badmessage" class="badmessage badmessage-hidden">
+               Длинна заголовка выше 100 символов
+            </div>
+            <div id="badmessageText" class="badmessage badmessage-hidden">
+               Длинна текста выше 200 символов
+            </div>
+         </div>
+         <div class="posts-section">
+            <h1>Лента</h1>
+            <div class="js-posts posts">Лента пустая</div>
+         </div>
+      </div>
+      <script src="./index.js"></script>
+   </body>
+</html>
